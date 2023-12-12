@@ -16,7 +16,7 @@ const TodoFetch = () => {
 
         try {
 
-            const response = await fetch('https://fake-todo-list-52f9a4ed80ce.herokuapp.com/todos/user/Jorgecasadob',
+            const response = await fetch('https://playground.4geeks.com/apis/fake/todos/user/jorgecasadob',
                 {
 
                     method: "GET",
@@ -70,7 +70,7 @@ const TodoFetch = () => {
 
             try {
 
-                const response = await fetch('https://fake-todo-list-52f9a4ed80ce.herokuapp.com/todos/user/Jorgecasadob',
+                const response = await fetch('https://playground.4geeks.com/apis/fake/todos/user/jorgecasadob',
                     {
 
                         method: "PUT",
@@ -108,7 +108,7 @@ const TodoFetch = () => {
         const newTodo = taskList.filter((task, index) => index != Id);
 
         try {
-            const response = await fetch('https://fake-todo-list-52f9a4ed80ce.herokuapp.com/todos/user/Jorgecasadob',
+            const response = await fetch('https://playground.4geeks.com/apis/fake/todos/user/jorgecasadob',
                 {
                     method: "PUT",
                     headers:
@@ -136,7 +136,7 @@ const TodoFetch = () => {
     const deleteTodo = async () => {
 
         try {
-            const response = await fetch('https://fake-todo-list-52f9a4ed80ce.herokuapp.com/todos/user/Jorgecasadob',
+            const response = await fetch('https://playground.4geeks.com/apis/fake/todos/user/jorgecasadob',
                 {
                     method: "DELETE",
                     headers:
@@ -146,18 +146,26 @@ const TodoFetch = () => {
                 });
 
             if (response.ok) {
+
                 getTasks();
+
             } else {
+
                 console.log("error deleting tasks");
             }
+
         } catch (error) {
+
             console.log(error);
         }
     }
     const createUser = async () => {
+
         try {
-            const response = await fetch('https://fake-todo-list-52f9a4ed80ce.herokuapp.com/todos/user/Jorgecasadob',
+
+            const response = await fetch('https://playground.4geeks.com/apis/fake/todos/user/jorgecasadob',
                 {
+
                     method: "POST",
                     headers:
                     {
@@ -167,6 +175,7 @@ const TodoFetch = () => {
                 });
 
                 if (response.ok) {
+					
                     getTasks();
                 }
 
