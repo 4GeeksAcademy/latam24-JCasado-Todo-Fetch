@@ -126,7 +126,7 @@ const TodoFetch = () => {
 
             } else {
 
-                console.log("error obtaining a tesk");
+                console.log("error obtaining a task");
             }
         }
         catch (exceptionVar) {
