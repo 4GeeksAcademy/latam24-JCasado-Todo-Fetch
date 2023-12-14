@@ -109,6 +109,7 @@ const TodoFetch = () => {
 
         try {
             const response = await fetch('https://playground.4geeks.com/apis/fake/todos/user/jorgecasadob',
+            
                 {
                     method: "PUT",
                     headers:
@@ -200,7 +201,7 @@ const TodoFetch = () => {
 
                     {
                         taskList.map((task, index) => {
-                            return <li className="task" key={index}>{task.label}<span className="delete" onClick={() => deleteTask(index)}> x </span></li>
+                            return <li className="task" key={index}>{task.label}<button className="delete" onClick={() => deleteTask(index)}> x </button></li>
                         })
                     }
 

@@ -2,6 +2,7 @@
 .delete{
     color: red;
     display: none;
+    border-radius: 5px;
     margin-left: 6px;
 }
 .task:hover .delete{
